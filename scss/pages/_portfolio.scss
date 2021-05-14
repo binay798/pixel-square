@@ -1,0 +1,9 @@
+.portfolio {
+	padding: 0 15rem;
+	padding-bottom: 10rem;
+
+	& > div {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+	}
+}

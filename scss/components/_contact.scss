@@ -1,0 +1,43 @@
+.contact {
+	min-height: 100vh;
+	padding: 10rem 15rem;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+
+
+	&__form {
+		
+		input, textarea {
+			display: block;
+			width: 100%;
+			outline: none;
+			background: transparent;
+			font-family: inherit;
+			font-style: italic;
+			font-weight: 600;
+			padding-bottom: 1rem;
+		}
+
+		div {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+			margin-bottom: 4rem;
+			gap: 2rem;
+		}
+	}
+
+	&__home {
+		input, textarea {
+			border: none;
+			font-size: 1.3rem;
+			color: #cfc9c9;
+			border-bottom: 1px solid white;
+
+			&::placeholder {
+				font: inherit;
+				color: currentColor;
+			}
+		}
+	}
+}

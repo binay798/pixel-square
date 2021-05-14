@@ -1,0 +1,44 @@
+.home {
+	height: 100vh;
+	background: coral;
+	min-height: 100vh;
+	background-image: url('./../images/first_bg.png');
+	margin-top: -8.5rem;
+	background-attachment: fixed;
+
+	&__services {
+		background: white;
+		padding: 10rem 15rem;
+		text-align: center;
+
+		&__container {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+			gap: 2rem;
+			margin-top: 5rem;
+		}
+	}
+
+	&__works {
+		background: $color-gray;
+		padding: 10rem 15rem;
+
+		&__container {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+			gap: 2rem;
+			margin-top: 5rem;
+		}
+		
+	}
+
+
+}
+
+.contact {
+		
+	h2 {
+		color: white;
+		margin-bottom: 6rem;
+	}
+}

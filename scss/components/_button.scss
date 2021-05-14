@@ -1,0 +1,67 @@
+.btn {
+	display: block;
+	border: none;
+	background: transparent;
+	text-decoration: none;
+
+	&__block {
+		
+		display: flex;
+		align-items: center;
+		width: 20rem;
+		padding: 1rem 2rem;
+		margin: 0 auto;
+		justify-content: center;
+		gap: 1rem;
+		font-weight: 600;
+		font-size: 1.6rem;
+		font-family: inherit;
+		cursor: pointer;
+		transition: .3s;
+		margin-top: 5rem;
+		
+
+		
+
+		&--black {
+			color: black;
+			border: 1px solid black;
+
+			&:hover {
+				background: black;
+				color: white;
+			}
+
+			&:hover svg {
+				fill: white;
+			}
+
+			svg {
+				width: 1rem;
+				height: 1rem;
+				fill: black;
+			}
+		}
+
+		&--white {
+			color: white;
+			border: 1px solid white;
+
+			&:hover {
+				background: white;
+				color: black;
+			}
+
+			&:hover svg {
+				fill: black;
+			}
+
+			svg {
+				width: 1rem;
+				height: 1rem;
+				fill: white;
+			}
+		}
+	}
+}
+
