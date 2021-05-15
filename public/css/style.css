@@ -167,7 +167,7 @@ body {
       padding: 0 5rem; } }
   @media only screen and (max-width: 450px) {
     .portfolio {
-      padding: 0 2rem; } }
+      padding: 2rem; } }
   .portfolio > div {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr)); }
