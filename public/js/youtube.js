@@ -5,7 +5,7 @@ let iframe = document.querySelector('.iframe');
 const openModal = (videoSrc) => {
 	modal.style.visibility = 'visible';
 	modal.style.opacity = 1;
-	modalMain.style.display = 'block'
+	modalMain.style.display = 'block';
 	modalMain.innerHTML = `
 		<iframe width=100% 
 		height=100% class="iframe" 

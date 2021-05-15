@@ -12,5 +12,6 @@
 	& > div {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+		gap: 4rem;
 	}
 }

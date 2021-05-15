@@ -2,6 +2,16 @@
 	height: 33rem;
 	transition: .3s;
 	cursor: pointer;
+	transition: .3s;
+
+	&:hover {
+		transform: translateY(-2rem);
+		box-shadow:-1px 3px 38px 5px rgba(0,0,0,0.22);
+	}
+	&:active {
+		transform: translateY(0);
+		box-shadow:-1px 3px 38px 5px rgba(0,0,0,0.1);
+	}
 	img {
 		display: block;
 		width: 100%;
@@ -37,9 +47,7 @@
 		}
 	}
 
-	&:hover {
-		box-shadow:-1px 3px 38px 5px rgba(0,0,0,0.22);
-	}
+	
 
 	&:hover &__desc {
 		background: white;
