@@ -17,10 +17,9 @@ body {
 .heading__primary {
   font-size: 4rem;
   letter-spacing: 2px;
-  font-weight: 400;
+  font-weight: 600;
   color: #333;
-  text-align: center;
-  margin-bottom: 2rem; }
+  text-align: center; }
   @media only screen and (max-width: 550px) {
     .heading__primary {
       font-size: 3rem; } }
@@ -32,7 +31,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 100;
-  transition: .3s; }
+  transition: .5s; }
 
 .footer {
   padding: 2rem 15rem;
@@ -179,6 +178,9 @@ body {
   .nav__logo {
     height: 4rem;
     display: block; }
+    @media only screen and (max-width: 500px) {
+      .nav__logo {
+        height: 3.8rem; } }
   .nav__container {
     display: flex;
     gap: 3rem;
@@ -222,13 +224,13 @@ body {
       top: 2.5rem;
       right: 2.5rem;
       background: black;
-      width: 4rem;
-      height: 4rem;
+      width: 1rem;
+      height: 1rem;
       z-index: 10;
       border-radius: 100%;
       transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
     .nav__responsive__inp:checked ~ .nav__responsive__background {
-      transform: scale(100); }
+      transform: scale(300); }
     .nav__responsive__inp:checked ~ .nav__button .nav__icon {
       background: transparent; }
     .nav__responsive__inp:checked ~ .nav__button .nav__icon::after {
@@ -241,7 +243,7 @@ body {
     display: flex;
     width: 7rem;
     height: 7rem;
-    background-color: white;
+    background-color: transparent;
     position: fixed;
     top: 1rem;
     right: 1rem;
@@ -253,7 +255,7 @@ body {
     display: block;
     width: 3rem;
     height: .3rem;
-    background: black;
+    background: gray;
     position: relative;
     transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
     .nav__icon::after, .nav__icon::before {
@@ -261,7 +263,7 @@ body {
       position: absolute;
       width: 100%;
       height: 100%;
-      background: black;
+      background: gray;
       transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
       left: 0; }
     .nav__icon::after {
@@ -290,9 +292,10 @@ body {
     color: white;
     transition: .3s; }
     .cardPrimary__desc p {
-      font-size: 1.2rem;
-      letter-spacing: 5px;
-      position: relative; }
+      font-size: 1.1rem;
+      letter-spacing: 7px;
+      position: relative;
+      font-weight: 600; }
       .cardPrimary__desc p::after {
         content: '';
         position: absolute;
@@ -330,15 +333,14 @@ body {
     box-shadow: -1px 3px 38px 5px rgba(0, 0, 0, 0.22); }
 
 .cardSecondary__desc h2 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 600;
-  margin-top: 2rem;
+  margin-top: 1rem;
   text-transform: uppercase; }
 
 .cardSecondary__desc h3 {
   font-size: 1.4rem;
   color: gray;
-  margin-top: .5rem;
   font-weight: 400; }
 
 .btn {
