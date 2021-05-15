@@ -2,6 +2,13 @@
 	padding: 0 15rem;
 	padding-bottom: 10rem;
 
+	@media only screen and (max-width: 800px) {
+		padding: 0 5rem;
+	}
+	@media only screen and (max-width: 450px) {
+		padding:0 2rem;
+	}
+
 	& > div {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));

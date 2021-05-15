@@ -5,6 +5,13 @@
 	background-size: cover;
 	margin-top: -8.5rem;
 
+	@media only screen and (max-width: 800px) {
+		padding: 10rem 5rem;
+	}
+		@media only screen and (max-width: 450px) {
+		padding: 2rem;
+	}
+
 	&__heading {
 		max-width: 70rem;
 		width: 100%;
@@ -14,5 +21,8 @@
 		box-shadow: 0 1rem 2rem rgba(0,0,0,0.12);
 		background: white;
 		text-transform: uppercase;
+		@media only screen and (max-width: 600px) {
+			padding: 2rem;
+		}
 	}
 }

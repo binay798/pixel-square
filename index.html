@@ -17,7 +17,7 @@
 <body>
 	<header class="header">
 		<nav  class="nav">
-			<img src="./public/images/core-img/logo.png" alt="" class="nav__logo">
+			<a href="/"><img src="./public/images/core-img/logo.png" alt="" class="nav__logo"></a>
 
 			<ul class="nav__container">
 				<li><a href="/" class="nav__link" >Home</a></li>
@@ -25,10 +25,40 @@
 				<li><a href="/portfolios.html" class="nav__link" >Portfolios</a></li>
 				<li><a href="/contact.html" class="nav__link" >Contact</a></li>
 			</ul>
+
+			<div class="nav__responsive">
+				<div class="nav__responsive__ham">
+					<input type="checkbox" id="menu" class="nav__responsive__inp" >
+					<label for="menu" class="nav__button">
+                		<span class="nav__icon">&nbsp;</span>
+						
+					</label>
+
+					<div class="nav__responsive__background">
+					
+					</div>
+
+					<ul class="nav__responsive__list">
+						<li><a href="/" class="nav__link" >Home</a></li>
+						<li><a href="/services.html" class="nav__link" >Services</a></li>
+						<li><a href="/portfolios.html" class="nav__link" >Portfolios</a></li>
+						<li><a href="/contact.html" class="nav__link" >Contact</a></li>
+					</ul>
+				</div>
+
+			</div>
 		</nav>
 	</header>
 
 	<section class="main">
+
+		<!-- Modal for youtube videos -->
+		<div class="modal">
+			<div class="modal__main">
+				
+			</div>
+		</div>
+
 		<div class="home"></div>
 
 		<div class="home__services">
@@ -66,7 +96,8 @@
 			<h2 class="heading__primary">OUR WORKS</h2>
 
 			<div class="home__works__container">
-				<div class="cardSecondary">
+				<!-- put youtube video source in openModal('...here goes source') -->
+				<div class="cardSecondary" onclick="openModal('https://www.youtube.com/embed/OjGV98Ak98E')">
 					<div class="cardSecondary__img">
 						<img src="./../public/images/portfolio/nepalstar.png" alt="">
 						<svg>
@@ -79,8 +110,8 @@
 						<h3>Animation</h3>
 					</div>
 				</div>
-				<div class="cardSecondary">
-					<div class="cardSecondary__img">
+				<div class="cardSecondary" onclick="openModal('https://youtube.com/embed/O73Zooryrf8')">
+					<div class="cardSecondary__img" >
 						<img src="./../public/images/portfolio/p8.png" alt="">
 						<svg>
 							<use href="./../public/icons/sprites.svg#play" />
@@ -93,8 +124,8 @@
 					</div>
 				</div>
 
-				<div class="cardSecondary">
-					<div class="cardSecondary__img">
+				<div class="cardSecondary" onclick="openModal('https://youtube.com/embed/Nd21cZg9YYs')">
+					<div class="cardSecondary__img"  >
 						<img src="./../public/images/portfolio/malaarts.png" alt="">
 						<svg>
 							<use href="./../public/icons/sprites.svg#play" />
@@ -106,7 +137,7 @@
 						<h3>Animation</h3>
 					</div>
 				</div>
-				<div class="cardSecondary">
+				<div class="cardSecondary" onclick="openModal('https://youtube.com/embed/6HkSc2j9mXA')">
 					<div class="cardSecondary__img">
 						<img src="./../public/images/portfolio/p1.png" alt="">
 						<svg>
@@ -119,7 +150,7 @@
 						<h3>Animation</h3>
 					</div>
 				</div>
-				<div class="cardSecondary">
+				<div class="cardSecondary" onclick="openModal('https://youtube.com/embed/5uGxMq2x5cI')">
 					<div class="cardSecondary__img">
 						<img src="./../public/images/portfolio/mysteriousland.png" alt="">
 						<svg>
@@ -132,7 +163,7 @@
 						<h3>Animation</h3>
 					</div>
 				</div>
-				<div class="cardSecondary">
+				<div class="cardSecondary" onclick="openModal('https://youtube.com/embed/IzquIar4vSw')">
 					<div class="cardSecondary__img">
 						<img src="./../public/images/portfolio/chisoashtraymotionposter.png" alt="">
 						<svg>
@@ -148,7 +179,7 @@
 
 			</div>
 
-			<a href="/" class="btn btn__block btn__block--black" >
+			<a href="/portfolios.html" class="btn btn__block btn__block--black" >
 				<p>Load More</p>
 				<svg>
 					<use href="./../public/icons/sprites.svg#right-arrow" />
@@ -160,22 +191,22 @@
 		<div class="contact" style="background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.8)),url('./../public/images/portfolio/1.png')">
 			<h2 class="heading__primary">GET IN TOUCH</h2>
 
-			<form action="" class="contact__form contact__home">
+			<form action="https://docs.google.com/forms/d/e/1FAIpQLSfR8w8Dxuec6S0sjcgNf0O_Rmiuzpzy_mgmrUnW1bMqXB59nw/formResponse" method="Post" class="contact__form contact__home">
 				<div>
-					<input type="text" placeholder="Name" >
-					<input type="text" placeholder="Email" >
-					<input type="text" placeholder="Subject" >
+					<input type="text" name="entry.2005620554" placeholder="Name" >
+					<input type="text" name="entry.1045781291" placeholder="Email" >
+					<input type="text" name="entry.1065046570" placeholder="Subject" >
 				</div>
 				
 				<textarea value="" rows="5" placeholder="Message" ></textarea>
 					
-				<a href="/" class="btn btn__block btn__block--white" >
+				<button class="btn btn__block btn__block--white" >
 					<p>Submit</p>
 					<svg>
 						<use href="./../public/icons/sprites.svg#right-arrow" />
 					</svg>
-				</a>
-				</form>
+				</button>
+			</form>
 		</div>
 	</section>
 
@@ -185,5 +216,9 @@
 	</footer>
 
 	<script type="text/javascript" src="./public/js/nav.js" ></script>
+	<script type="text/javascript" src="./public/js/animate.js" ></script>
+	<script type="text/javascript" src="./public/js/youtube.js" ></script>
+
+
 </body>
 </html>
