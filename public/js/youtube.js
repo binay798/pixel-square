@@ -15,7 +15,7 @@ const openModal = (videoSrc) => {
 	`
 }
 modal.addEventListener('click', (e) => {
-	if(e.target.className === 'modal') {
+	if(e.target.className === 'modal' ) {
 		e.target.style.visibility = 'hidden';
 		e.target.style.opacity = 0;
 		modalMain.innerHTML = null;

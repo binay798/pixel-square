@@ -112,7 +112,8 @@ body {
   background-image: url("./../images/first_bg.webp");
   margin-top: -8.5rem;
   background-attachment: fixed;
-  background-size: cover; }
+  background-size: cover;
+  background-position: bottom; }
   @media only screen and (max-width: 800px) {
     .home {
       height: 50vh; } }
@@ -470,3 +471,17 @@ body {
     height: 80%;
     padding: 1rem;
     background: white; }
+    @media only screen and (max-width: 500px) {
+      .modal__main {
+        height: 60%; } }
+  .modal .cancel {
+    width: 2rem;
+    height: 2rem;
+    position: fixed;
+    top: 2rem;
+    right: 3rem;
+    cursor: pointer; }
+    .modal .cancel svg {
+      width: 2rem;
+      height: 2rem;
+      fill: white; }

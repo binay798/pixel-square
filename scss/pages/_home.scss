@@ -5,10 +5,14 @@
 	margin-top: -8.5rem;
 	background-attachment: fixed;
 	background-size: cover;
+	background-position: bottom;
+
 
 	@media only screen and (max-width: 800px) {
 		height: 50vh;
 	}
+
+	
 
 	&__services {
 		background: white;
