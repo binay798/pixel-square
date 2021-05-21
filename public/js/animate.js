@@ -32,7 +32,4 @@ inp.forEach(item => {
 	duration += 100
 })
 
-sal({
-	thresold: 1,
-	once: false
-})
+sal()
