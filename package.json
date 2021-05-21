@@ -11,5 +11,8 @@
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^6.0.0"
+  },
+  "dependencies": {
+    "sal.js": "^0.8.5"
   }
 }

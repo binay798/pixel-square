@@ -12,6 +12,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200&display=swap" rel="stylesheet">
 
 	<!-- Stylesheet -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/sal.js@0.8.5/dist/sal.css">
 	<link rel="stylesheet" href="./public/css/style.css">
 </head>
 <body>
@@ -56,6 +57,14 @@
 	</header>
 
 	<section class="main">
+		<!-- Modal for youtube videos -->
+		<div class="modal">
+			<div class="modal__main">
+				
+			</div>
+			
+			
+		</div>
 		<div class="context">
 			
 		</div>
@@ -65,7 +74,7 @@
 		
 		<div class="portfolio">
 			<div class="home__works__container">
-				<div class="cardSecondary">
+				<div class="cardSecondary" onclick="openModal('https://www.youtube.com/embed/OjGV98Ak98E')">
 					<div class="cardSecondary__img">
 						<img src="./../public/images/portfolio/nepalstar.webp" alt="">
 						<svg>
@@ -78,8 +87,8 @@
 						<h3>Animation</h3>
 					</div>
 				</div>
-				<div class="cardSecondary">
-					<div class="cardSecondary__img">
+				<div class="cardSecondary" onclick="openModal('https://youtube.com/embed/O73Zooryrf8')">
+					<div class="cardSecondary__img" >
 						<img src="./../public/images/portfolio/p8.webp" alt="">
 						<svg>
 							<use href="./../public/icons/sprites.svg#play" />
@@ -92,8 +101,8 @@
 					</div>
 				</div>
 
-				<div class="cardSecondary">
-					<div class="cardSecondary__img">
+				<div class="cardSecondary" onclick="openModal('https://youtube.com/embed/Nd21cZg9YYs')">
+					<div class="cardSecondary__img"  >
 						<img src="./../public/images/portfolio/malaarts.webp" alt="">
 						<svg>
 							<use href="./../public/icons/sprites.svg#play" />
@@ -105,7 +114,7 @@
 						<h3>Animation</h3>
 					</div>
 				</div>
-				<div class="cardSecondary">
+				<div class="cardSecondary" onclick="openModal('https://youtube.com/embed/6HkSc2j9mXA')">
 					<div class="cardSecondary__img">
 						<img src="./../public/images/portfolio/p1.webp" alt="">
 						<svg>
@@ -118,7 +127,7 @@
 						<h3>Animation</h3>
 					</div>
 				</div>
-				<div class="cardSecondary">
+				<div class="cardSecondary" onclick="openModal('https://youtube.com/embed/5uGxMq2x5cI')">
 					<div class="cardSecondary__img">
 						<img src="./../public/images/portfolio/mysteriousland.webp" alt="">
 						<svg>
@@ -131,7 +140,7 @@
 						<h3>Animation</h3>
 					</div>
 				</div>
-				<div class="cardSecondary">
+				<div class="cardSecondary" onclick="openModal('https://youtube.com/embed/IzquIar4vSw')">
 					<div class="cardSecondary__img">
 						<img src="./../public/images/portfolio/chisoashtraymotionposter.webp" alt="">
 						<svg>
@@ -144,108 +153,100 @@
 						<h3>Animation</h3>
 					</div>
 				</div>
+
+
+
+
 				<div class="cardSecondary">
-					<div class="cardSecondary__img">
-						<img src="./../public/images/portfolio/nepalstar.webp" alt="">
+					<div class="cardSecondary__img" onclick="openModal('https://youtube.com/embed/cF6oUFU70aY')">
+						<img src="./../public/images/portfolio/earth.webp" alt="">
 						<svg>
 							<use href="./../public/icons/sprites.svg#play" />
 						</svg>
 					</div>
 
 					<div class="cardSecondary__desc">
-						<h2>Nepal Star Intro</h2>
-						<h3>Animation</h3>
+						<h2>Earth</h2>
+						<h3>3D Animation</h3>
 					</div>
 				</div>
 				<div class="cardSecondary">
 					<div class="cardSecondary__img">
-						<img src="./../public/images/portfolio/p8.webp" alt="">
+						<img src="./../public/images/portfolio/MysteriousFish.webp" alt="">
+						
+					</div>
+
+					<div class="cardSecondary__desc">
+						<h2>Mysterious fish</h2>
+						<h3>CGI</h3>
+					</div>
+				</div>
+
+				<div class="cardSecondary">
+					<div class="cardSecondary__img">
+						<img src="./../public/images/portfolio/p2.webp" alt="">
+						
+					</div>
+
+					<div class="cardSecondary__desc">
+						<h2>Small Led Light</h2>
+						<h3>Animation</h3>
+					</div>
+				</div>
+				<div class="cardSecondary" onclick="openModal('https://youtube.com/embed/cTLC_m9O1xk')">
+					<div class="cardSecondary__img">
+						<img src="./../public/images/portfolio/aeKancha.webp" alt="">
 						<svg>
 							<use href="./../public/icons/sprites.svg#play" />
 						</svg>
 					</div>
 
 					<div class="cardSecondary__desc">
-						<h2>Nepal Ice Bear</h2>
-						<h3>Animation</h3>
+						<h2>Ae Kancha</h2>
+						<h3>Lyrical Video</h3>
 					</div>
 				</div>
-
 				<div class="cardSecondary">
 					<div class="cardSecondary__img">
-						<img src="./../public/images/portfolio/malaarts.webp" alt="">
-						<svg>
-							<use href="./../public/icons/sprites.svg#play" />
-						</svg>
+						<img src="./../public/images/portfolio/p3.webp" alt="">
+						
 					</div>
 
 					<div class="cardSecondary__desc">
-						<h2>Mala Arts</h2>
+						<h2>Led Office Hall</h2>
 						<h3>Animation</h3>
 					</div>
 				</div>
 				<div class="cardSecondary">
 					<div class="cardSecondary__img">
-						<img src="./../public/images/portfolio/p1.webp" alt="">
-						<svg>
-							<use href="./../public/icons/sprites.svg#play" />
-						</svg>
+						<img src="./../public/images/portfolio/p4.webp" alt="">
+						
 					</div>
 
 					<div class="cardSecondary__desc">
-						<h2>Three sisters</h2>
-						<h3>Animation</h3>
+						<h2>Liquor</h2>
+						<h3>CGI</h3>
 					</div>
 				</div>
 				<div class="cardSecondary">
 					<div class="cardSecondary__img">
-						<img src="./../public/images/portfolio/mysteriousland.webp" alt="">
-						<svg>
-							<use href="./../public/icons/sprites.svg#play" />
-						</svg>
+						<img src="./../public/images/portfolio/p5.webp" alt="">
+						
 					</div>
 
 					<div class="cardSecondary__desc">
 						<h2>Mysterious Land</h2>
-						<h3>Animation</h3>
+						<h3>CGI</h3>
 					</div>
 				</div>
 				<div class="cardSecondary">
 					<div class="cardSecondary__img">
-						<img src="./../public/images/portfolio/chisoashtraymotionposter.webp" alt="">
-						<svg>
-							<use href="./../public/icons/sprites.svg#play" />
-						</svg>
+						<img src="./../public/images/portfolio/p6.webp" alt="">
+						
 					</div>
 
 					<div class="cardSecondary__desc">
-						<h2>Chiso Ashtray</h2>
-						<h3>Animation</h3>
-					</div>
-				</div>
-				<div class="cardSecondary">
-					<div class="cardSecondary__img">
-						<img src="./../public/images/portfolio/mysteriousland.webp" alt="">
-						<svg>
-							<use href="./../public/icons/sprites.svg#play" />
-						</svg>
-					</div>
-
-					<div class="cardSecondary__desc">
-						<h2>Mysterious Land</h2>
-						<h3>Animation</h3>
-					</div>
-				</div>
-				<div class="cardSecondary">
-					<div class="cardSecondary__img">
-						<img src="./../public/images/portfolio/chisoashtraymotionposter.webp" alt="">
-						<svg>
-							<use href="./../public/icons/sprites.svg#play" />
-						</svg>
-					</div>
-
-					<div class="cardSecondary__desc">
-						<h2>Chiso Ashtray</h2>
+						<h2>Logo intro</h2>
 						<h3>Animation</h3>
 					</div>
 				</div>
@@ -259,7 +260,7 @@
 		<img src="./public/images/core-img/logo.png" alt="" class="nav__logo">
 		<p>Copyright ©2021 PixelSquare. All rights reserved</p>	
 	</footer>
-
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sal.js@0.8.5/dist/sal.min.js" ></script>
 	<script type="text/javascript" src="./public/js/nav.js" ></script>
 	<script type="text/javascript" src="./public/js/animate.js" ></script>
 	<script type="text/javascript" src="./public/js/youtube.js" ></script>
