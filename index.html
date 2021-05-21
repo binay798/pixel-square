@@ -224,6 +224,11 @@
 			</form>
 		</div>
 	</section>
+
+
+
+
+	
 	
 	
 
@@ -232,11 +237,27 @@
 		<p>Copyright ©2021 PixelSquare. All rights reserved</p>	
 	</footer>
 
+	<!-- Load Facebook SDK for JavaScript -->
+	<div id="fb-root"></div>
+	<!-- Your customer chat code -->
+	<div class="fb-customerchat"
+		attribution=setup_tool
+		page_id="541475786252690"
+		theme_color="#000000"
+		logged_in_greeting="Hi! How can we help you?"
+		logged_out_greeting="Hi! How can we help you?">
+    </div>
+
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sal.js@0.8.5/dist/sal.min.js" ></script>
 	<script type="text/javascript" src="./public/js/nav.js" ></script>
 	<script type="text/javascript" src="./public/js/animate.js" ></script>
 	<script type="text/javascript" src="./public/js/youtube.js" ></script>
-
+	<script> 
+		(function(e, t, n) {
+		    var o, r = e.getElementsByTagName(t)[0];
+		    e.getElementById(n) || ((o = e.createElement(t)).id = n, o.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1", r.parentNode.insertBefore(o, r))
+	    }(document, "script", "facebook-jssdk"));
+	</script>
 
 </body>
 </html>
