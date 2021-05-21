@@ -4,6 +4,8 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
+	position: relative;
+	z-index: 20;
 
 	@media only screen and (max-width: 800px) {
 		padding: 10rem 5rem;
