@@ -419,8 +419,7 @@ body {
         fill: white; }
 
 .contact {
-  min-height: 100vh;
-  padding: 10rem 15rem;
+  padding: 10rem;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
