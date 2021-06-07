@@ -7,6 +7,8 @@ let contact = document.querySelector('#contact');
 
 let goTop = document.querySelector('.goTop')
 
+
+
 function goToTop() {
 	window.scroll(0, 0);
 }
@@ -38,13 +40,13 @@ switch(window.location.pathname) {
 	case '/':
 		home.className = `nav__link active`;
 		break;
-	case '/services.html':
+	case '/our-services.html':
 		services.className = `nav__link active`;
 		break;
-	case '/portfolios.html':
+	case '/our-portfolios.html':
 		portfolios.className = `nav__link active`;
 		break;
-	case '/contact.html':
+	case '/contact-us.html':
 		contact.className = `nav__link active`;
 		break;
 	default:
