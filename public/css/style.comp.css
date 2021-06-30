@@ -238,7 +238,7 @@ body {
     font-weight: 600;
     transition: 0.2s; }
     .nav__link:hover {
-      color: #8b8bf5; }
+      color: #00ccff; }
   .nav__responsive {
     display: none; }
     @media only screen and (max-width: 900px) {
@@ -319,7 +319,7 @@ body {
   display: none; }
 
 .active {
-  color: #8b8bf5 !important; }
+  color: #00ccff !important; }
 
 .cardPrimary {
   height: 33rem;
